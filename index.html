@@ -1,16 +1,362 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
 	      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
 
+
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.bg {
+    /* The image used */
+    background-image: url("bg.png");
+
+    /* Full height */
+    height: 100%; 
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bar {
+	position:fixed; 
+	width:100%; 
+
+	top:0px; 
+}
+
+.test {
+	min-height:100%;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("bg.png");
+
+    /* Full height */
+    height: 100%; 
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;/* Just to visualize the extent */
+  
+}
+</style>
 
 </head>
 <body>
-<h1>This page is under construction</h1>
-<p>Keep visiting, you might notice some changes soon :)</p>
+<div class="row">
+  	<div class="fullscreen">
+	  	 <div class="valign-wrapper" style="width:100%;height:100%;position: absolute;">
+    <div class="valign" style="width:100%;">
+        <div class="container">
+           <div class="row">
+              <div class="col s12 m6 offset-m3">
+                   <div class="card black">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="ci.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-white">About Me<i class="material-icons right">more_vert</i></span>
+				     
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4"><center>About Me <i class="material-icons right">close</i></center></span>
+				      <p>An avid programmer with demonstrated proficiency in the field of web development, mobile development, big data and analytics. Currently seeking out opportunities that fuel my interest and enthusiasm in the field of computer science and programming.</p>
+				      
+				      <div class="row">
+				      		<center>
+				      		<a class="col l4 s12 waves-effect waves-light btn grey darken-4 modal-trigger" href="#skills">skills</a></center>
+				      
+				      	
+					      
+					      	<center>
+					      		<a class="col l4 s12 waves-effect waves-light btn grey darken-4 modal-trigger" href="#projects">projects</a></center>
+					    
 
+					 
+					      	<center>
+					      		<a class="col l4 s12 waves-effect waves-light btn grey darken-4 modal-trigger truncate" href="#work_experience">work experience</a></center>
+				
+				      </div>
+				      <div class="row">
+								<center>
+				      		<a class="col l4 s12 waves-effect waves-light btn grey darken-4 modal-trigger" href="#personal_skills">personal skills</a></center>
+				      
+				      		<center>
+				      		<a class="col l4 s12 waves-effect waves-light btn grey darken-4 modal-trigger truncate" href="#education">education</a></center>	
+					      
+					      	<center>
+					      		<a class="col l4 s12 waves-effect waves-light btn grey darken-4 modal-trigger" href="#hobbies">hobbies</a></center>
+					    
+
+					 
+				      
+				      </div>
+				      	<div class="card-title">
+				      		<center>Contact</center>
+				      	</div>
+				      	<div class="row">
+
+				      		<div class="col l6 s12"><p><i class="material-icons left">email</i>aseem2301@gmail.com</p></div>
+				      		<div class="col l6 s12"><p><i class="material-icons left">phonelink_ring</i>+919654019566</p></div>
+				      		<div class="col l6 s12"><p><i class="material-icons left">touch_app</i><a href="https://www.linkedin.com/in/aseemupadhyay/">LinkedIn</a></p></div>
+				      		<div class="col l6 s12"><p><i class="material-icons left">code</i><a href="https://github.com/Bryze">Github</a></p></div>
+				      		<div class="col l6 s12"><p><i class="material-icons left">description</i><a href="https://allinone542.wordpress.com/">Blog</a></p></div>
+				      	</div>
+				     
+				     
+				    </div>
+				  </div>
+           </div>
+        </div>
+    </div>
+    
+</div>
+	</div>
+
+	 
+
+</div>
+ 
+  <div id="skills" class="modal">
+    <div class="modal-content">
+      <h4>Skills</h4>
+      <div class="row">
+      	<div class="col l6 s12">
+      		Languages : 
+      	</div>
+      	<div class="col l6 s12">
+      		PHP, C++, Java, Python, R
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		Web Technologies : 
+      	</div>
+      	<div class="col l6 s12">
+      		HTML, CSS, Javascript, JQuery, ReactJS, Materialize, Phalcon, Zend
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		Databases :                                          
+      	</div>
+      	<div class="col l6 s12">
+      		MySQL, NoSQL, Firebase
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		Code Quality and Review Tools :                                          
+      	</div>
+      	<div class="col l6 s12">
+      		SonarQube, Review Board
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		Versioning Control Systems :                                              
+      	</div>
+      	<div class="col l6 s12">
+      	     SVN, Git
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		Big Data Ecosystems :                                             
+      	</div>
+      	<div class="col l6 s12">
+      	    Hadoop, HDFS, Sqoop, Hive, Pig, Spark, Flume, HBase, Impala
+      	</div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+
+  <div id="projects" class="modal">
+    <div class="modal-content">
+      <h4>Projects</h4>
+      <div class="row">
+      	<div class="col l6 s12">
+      		CAMPAIGN-AD ANALYSIS <br> AUGUST 2017 – SEPTEMBER 2017 
+      	</div>
+      	<div class="col l6 s12">
+      		Analysis was performed on the database containing the yearly expenses incurred by a company for its digital marketing campaigns. Least and most performing keywords as well as websites were determined. Sqoop was used for data ingestion, data manipulation was done using Hive and ETL operations were carried out using Pig. 
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		REACTJS FRONT END DEVELOPMENT <br>INTERNSHIP AT FAVCY <br> FEB 2017 - APR 2017
+      	</div>
+      	<div class="col l6 s12">
+      		This project involved development of the web pages in such a way that the coupling between the view and the data is minimum. Elements of a web page were designed in terms of components. In event of a change in layout, components were have to be rearranged/replaced .i.e. least number of code/files were disturbed in order to make the requisite change, hence promoting modularity in the front-end development of the project.
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		JUST METRO THINGS <br> COLLEGE PROJECT <br> JANUARY 2017 – MAY 2017                                         
+      	</div>
+      	<div class="col l6 s12">
+      		An application that encourages meeting up of socially active people travelling via the metro. It provides a platform for users to share their moments, to start a conversation with a stranger, to view other people travelling on the same route and to get all the information related to metro.
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		H.A.N.C ( HELP ATTEND NATURE’S CALL )<br> COLLEGE PROJECT <br> JULY 2016 – DEC 2016                                     
+      	</div>
+      	<div class="col l6 s12">
+      		An application which was developed in support of the Swachh Bharat Abhiyaan. The project aimed to curb the problem of open defecation by pinpointing all the nearby washrooms upto a certain radius based on user’s current location.
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		BACKEND DEVELOPER <br> INTERNSHIP AT FAVCY <br> JULY 2016 - AUGUST 2016                                            
+      	</div>
+      	<div class="col l6 s12">
+      	     Worked on MVC Architecture using Zend Framework in PHP. Used various tools like Redmine for project management, SonarQube and Review Board for reviewing code and SVN for software versioning and revision control. Wrote the code in a structure that follows the MVC principle for easier maintenance and faster scalability.
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l6 s12">
+      		COLLEGE AUTOMATION SYSTEM <br> COLLEGE PROJECT <br> SEPT 2015 - AUGUST 2016                                             
+      	</div>
+      	<div class="col l6 s12">
+      	   A software that automates various integral processes of a college, some of which include time table generation, internal marks updation, viewing of attendance etc. In addition, new functionalities were also implemented like society management, profile management, support for alumni etc. For better administration of the software, a facility of a super-admin was also provided to foresee all operations.
+<a href = "http://sscbsweb.co.in/">Check it live here</a>
+Also developed a web page in PHP using Materialize framework that dynamically generates the list of available question papers of various semesters by iterating through the given course directories. Any subsequent addition of question paper is automatically displayed on the webpage.
+
+      	</div>
+      </div>
+      <div class="divider"></div>
+    </div>
+    
+  </div>
+  <div id="work_experience" class="modal">
+    <div class="modal-content">
+      <h4>Work Experience</h4>
+      <div class="row">
+      	<div class="col l6 s12">
+      		Favcy <br> JULY 2017 - PRESENT                                            
+      	</div>
+      	<div class="col l6 s12">
+      	   Working on both the backend and frontend of deliverables on a custom built framework extended from the Phalcon framework for PHP. SVN is used as the versioning control system. Also performed queries on large transactional databases to generate reports for insights.
+      	</div>
+      </div>
+      <div class="divider"></div>
+    </div>
+    
+  </div>
+
+  <div id="education" class="modal">
+    <div class="modal-content">
+      <h4>Education</h4>
+      <div class="row">
+      	<div class="col l10 s12">
+      		SHAHEED SUKHDEV COLLEGE OF BUSINESS STUDIES, UNIVERSITY OF DELHI <br> B.Tech COMPUTER SCIENCE <br>
+      		2013-2017
+      	</div>
+      	<div class="col l2 s12">
+      	   80.80%
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l10 s12">
+      		APEEJAY SCHOOL, SAKET <br> 12th CBSE <br> 2013
+
+      	</div>
+      	<div class="col l2 s12">
+      	   87.4%
+      	</div>
+      </div>
+      <div class="divider"></div>
+      <div class="row">
+      	<div class="col l10 s12">
+      		APEEJAY SCHOOL, SAKET <br> 10th CBSE <br> 2011
+      	</div>
+      	<div class="col l2 s12">
+      	   81.6%
+      	</div>
+      </div>
+      <div class="divider"></div>
+    </div>
+    
+  </div>
+
+  <div id="personal_skills" class="modal">
+    <div class="modal-content">
+      <h4>Personal Skills</h4>
+      <p><i class="material-icons left">done</i>Quick Learner</p>
+      <p><i class="material-icons left">done</i>Motivated</p>
+      <p><i class="material-icons left">done</i>Enthusiastic</p>
+      <p><i class="material-icons left">done</i>Hard Working</p>
+      <p><i class="material-icons left">done</i>Team Player</p>
+      <p><i class="material-icons left">done</i>Creative</p>
+      <p><i class="material-icons left">done</i>Good Communicator</p>
+    </div>
+  </div>
+
+  <div id="hobbies" class="modal">
+    <div class="modal-content">
+      <h4>Hobbies</h4>
+  	  <p><i class="material-icons left">done</i>Reading</p>
+      <p><i class="material-icons left">done</i>Listening to music</p>
+      <p><i class="material-icons left">done</i>Outdoor games</p>
+      <p><i class="material-icons left">done</i>Coding</p>
+      <p><i class="material-icons left">done</i>Gaming</p>
+    </div>
+    
+  </div>
+          
+<script type="text/javascript">
+	
+
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+
+   $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+          
+          
+</script>
+
+ 
 </body>
 </html>
